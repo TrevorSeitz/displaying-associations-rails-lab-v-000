@@ -2,5 +2,5 @@
 <%= link_to @artist.name%>
 
 <% @artist.songs.each do |song| %>
-  <%= song.title %>
+  <%= link_to song.title %>
   <% end %>
