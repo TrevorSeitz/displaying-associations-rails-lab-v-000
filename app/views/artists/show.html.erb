@@ -1,5 +1,5 @@
 <%# binding.pry %>
-<%= @artist.name%> has <%= @arstis.song_count %> songs
+<%= @artist.name%> has <%= @arstist.songs.count %> songs
 
 <ul><% @artist.songs.each do |song| %>
   <li><%= link_to song.title, song_path(song) %></li>
