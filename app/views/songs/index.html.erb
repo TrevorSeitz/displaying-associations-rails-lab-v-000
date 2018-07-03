@@ -1,5 +1,5 @@
 <%#= binding.pry %>
 <ul><% @songs.each do |song| %>
   <%#= binding.pry %>
-  <li><%= link_to "#{song.artist.name} - #{song.title}", artist_path(song.artist.id) %></li>
+  <li><%= link_to "#{song.artist.name}", artist_path(song.artist.id) %> - <% song.title %></li>
 <% end %></ul>
