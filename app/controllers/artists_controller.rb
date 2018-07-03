@@ -45,7 +45,7 @@ class ArtistsController < ApplicationController
   end
 
   def song_count
-    @artist.songs.count
+    @song_count = @artist.songs.all.count
   end
 
   private
